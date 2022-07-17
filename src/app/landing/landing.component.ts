@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ContactService } from '../contact.service';
 import { FormGroup, FormBuilder, FormControl, Validators, NgForm } from '@angular/forms'
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-landing',
@@ -17,7 +18,7 @@ export class LandingComponent implements OnInit {
 
 
   // constructor(private builder: FormBuilder) { }
-  constructor(private builder: FormBuilder, private contact: ContactService) { }
+  constructor(private builder: FormBuilder, private contact: ContactService, private router: Router,) { }
 
 
   ngOnInit() {
@@ -33,7 +34,8 @@ export class LandingComponent implements OnInit {
     console.log(FormData)
     this.contact.PostMessage(FormData)
       .subscribe(response => {
-        location.href = 'https://mailthis.to/confirm'
+        alert('message sent successfully!')
+        this.router.navigate(["home"])
         console.log(response)
       }, error => {
         console.warn(error.responseText)

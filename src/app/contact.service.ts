@@ -5,14 +5,13 @@ import { ContactModel } from './model/contact-model';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators'
 import { HttpHeaders } from '@angular/common/http'
-import{ContactS}
 
 @Injectable({
   providedIn: 'root'
 })
 export class ContactService {
 
-  private mailApi = 'https://mailthis.to/codeninja'
+  private mailApi = ' https://mailthis.to/atienoobwanda'
 
   constructor(private http: HttpClient) { }
 
