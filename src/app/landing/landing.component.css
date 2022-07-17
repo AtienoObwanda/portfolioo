@@ -233,3 +233,98 @@
       background-position: center;
       transition: transform .2s;
     }
+
+
+    .corps{
+        padding: 80px 0 80px 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        color: #333;
+    }
+    
+    .container{
+        width: 1200px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+    }
+    
+    .gauche{
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    #competences-container{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #carousel-comp{
+        width: 70%;
+        height: 170px;
+        display: flex;
+        align-items: center;
+        display: flex;
+        justify-content: flex-start;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    #slider-comp{
+        display: flex;
+        height: 100%;
+        width: 500%;
+        flex-shrink: 0;
+        transition: all 0.5s ease;
+    }
+    
+    .desc-comp{
+        color: #333;
+        font-weight: 700;
+        margin: 10px 0 5px 0;
+        text-transform: uppercase;
+    }
+    
+    .comp svg, .comp img{
+        transition: all 500ms ease;
+    }
+    
+    .comp{
+        flex-basis: 7%;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .fleches{
+        transition: opacity 250ms ease;
+        cursor: pointer;
+        opacity: 0.4;
+    }
+    
+    .fleches:hover{
+        opacity: 1;
+    }
+    
+    /* h3{
+        font-size: 28px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+     */
+    hr{
+        margin-top: 10px;
+        margin-bottom: 40px;
+        background: #006f80;
+        width: 90px;
+        height: 4px;
+        border: none;
+    }
