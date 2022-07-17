@@ -46,7 +46,11 @@ document.addEventListener('DOMContentLoaded', function () {
       varTrans = 25;
   }
 
-  function prec(){
+
+
+
+
+function prec(){
       direction = 1;
       slider.style.transform = 'translate('+ varTrans +'%)';
       for(i=0; i<document.getElementsByClassName("comp").length; i++){

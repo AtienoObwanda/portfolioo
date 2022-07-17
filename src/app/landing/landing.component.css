@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
-    background-color: black;
+    background-color: #1f1d2b;
 
   }
   body {
@@ -65,7 +65,7 @@
     padding: 0;
     width: 60px;
     height: 100vh;
-    background-color: black;
+    background-color: #1f1d2b;
   }
   
   h3 {
@@ -107,7 +107,7 @@
   }
   
   .nav li i:active {
-   background-color: black;
+   background-color: #1f1d2b;
     color: white;
   }
   
@@ -328,3 +328,69 @@
         height: 4px;
         border: none;
     }
+
+ 
+.blog-slider {
+    width: 95%;
+  position: relative;
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+    padding: 25px;
+    border-radius: 25px;
+    height: 400px;
+    transition: all .3s;
+  
+   
+  @media screen and (max-width: 992px) {
+    max-width: 680px;
+        height: 400px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    min-height: 500px;
+    height: auto;
+    margin: 180px auto;
+  }
+  
+  
+  @media screen and (max-height: 500px) and (min-width: 992px) {
+        height: 350px;
+  }
+    
+}
+ 
+
+    
+  
+ 
+.content{
+    background-color: white;
+}
+
+
+
+.code {
+    color: #7b7992;
+    margin-bottom: 15px;
+    display: block;
+    font-weight: 500;
+    background-color: white;
+
+  }
+  .title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #0d0925;
+    margin-bottom: 20px;
+    background-color: white;
+
+  }
+  .Btext {
+    color: #4e4a67;
+    margin-bottom: 30px;
+    line-height: 1.5em;
+    background-color: white;
+
+  }
