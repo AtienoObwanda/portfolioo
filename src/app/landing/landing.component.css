@@ -60,7 +60,7 @@
   }
   
   .nav li i:hover {
-   background-color: #00ffff;
+   background-color: #FE8D01;
     color: white;
     width: 60px;
     cursor: pointer;
@@ -89,11 +89,10 @@
   }
   
   .media i:hover {
-    color: #00ffff;
+    color: #FE8D01;
   }
   
   .home {
-    background-image: url("https://i.imgsafe.org/2b173c49d1.jpg");
     background-position: center center;
     display: block;
     width: 100%;
@@ -118,9 +117,12 @@
   }
   
   span {
-    -webkit-text-stroke: 4px #00ffff;
-    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 4px #FFF;
+    -webkit-text-fill-color: #FE8D01;
+    font-family: 'Montserrat', sans-serif;
+
   }
+
   
   .text button {
     margin-top: 60px;
@@ -128,13 +130,13 @@
     width: 150px;
     height: 30px;
    background-color: transparent;
-    color: #00ffff;
-    border: 1px solid #00ffff;
+    color: #FE8D01;
+    border: 1px solid #FE8D01;
     cursor: pointer;
   }
   
   .text button:hover {
-    background-color: #00ffff;
+    background-color: #FE8D01;
     color: white;
     border: 1px solid white;
   }
@@ -226,7 +228,7 @@
     }
     
     #carousel-comp{
-        width: 70%;
+        width: 100%;
         height: 170px;
         display: flex;
         align-items: center;
@@ -256,7 +258,7 @@
     }
     
     .comp{
-        flex-basis: 7%;
+        flex-basis: 4%;
         flex-shrink: 0;
         display: flex;
         justify-content: center;
@@ -291,8 +293,8 @@
 
  
 .blog-slider {
-    width: 95%;
-  position: relative;
+    width: 100vw;
+    position: relative;
     max-width: 800px;
     margin: auto;
     background: #fff;
