@@ -103,12 +103,14 @@
     padding-left: 110px;
     padding-top: 130px;
     color: white;
+    font-family: Gotham Pro;
+
   }
   
   .home h1 {
-    font-size: 55px;
+    font-size: 60px;
     letter-spacing: 0.1em;
-    font-family: 'Montserrat', sans-serif;
+    font-family: Newyork;
   }
   
   .home h5 {
@@ -117,9 +119,11 @@
   }
   
   span {
-    -webkit-text-stroke: 4px #FFF;
-    -webkit-text-fill-color: #FE8D01;
-    font-family: 'Montserrat', sans-serif;
+    color: #FE8D01;
+    /* -webkit-text-stroke: 4px #FFF;
+    -webkit-text-fill-color: #FE8D01; */
+    font-family: Newyork;
+    font-weight: bold;
 
   }
 
@@ -127,16 +131,17 @@
   .text button {
     margin-top: 60px;
     font-size: 12px;
+    font-family: Gotham Pro;
     width: 150px;
     height: 30px;
-   background-color: transparent;
+    background-color: transparent;
     color: #FE8D01;
     border: 1px solid #FE8D01;
     cursor: pointer;
   }
   
   .text button:hover {
-    background-color: #FE8D01;
+    /* background-color: #FE8D01; */
     color: white;
     border: 1px solid white;
   }
@@ -247,10 +252,11 @@
     }
     
     .desc-comp{
-        color: #333;
+        color: #fff;
         font-weight: 700;
         margin: 10px 0 5px 0;
         text-transform: uppercase;
+        font-size: 35px;
     }
     
     .comp svg, .comp img{
@@ -356,3 +362,139 @@
     background-color: white;
 
   }
+
+
+  .title{
+    text-align: center;
+    font-family: 'Oswald';
+    font-weight: 100;
+    font-size: 3.75rem;
+    letter-spacing:5px;
+    background: linear-gradient(rgba(255,0,0,0), #444,rgba(255,0,0,0));
+    /* -webkit-background-clip: text; */
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0;
+    @media screen and (min-width:37.5em){
+      font-size: 4.75rem;
+    }
+  }
+  p{
+    margin:0 auto 2rem;
+    text-align: center;
+    font-family: 'oswald';
+    font-size: 1.25rem;
+    color:#444;
+    font-weight: 100;
+    width: 90%;
+    @media screen and (min-width:37.5em){
+      height: 70%;
+    }
+    
+  }
+  .case-study-gallery{
+    margin-top:50px;
+    width: 90%;
+    margin:50px auto;
+    max-width:1100px;
+  }
+  .case-study {
+    position: relative;
+    display:block;
+    width: 90%;
+    height: 250px;
+    margin:0 auto 2rem;
+      background-size:cover;
+    border-radius:10px;
+    box-shadow:0px 25px 50px rgba(0,0,0,.5);
+    overflow:hidden;
+    transition:all .4s ease;
+    @media screen and (min-width:37.5em){
+      height: 300px;
+    }
+    @media screen and (min-width:45em) {
+      display:inline-block;
+        width: 45%;
+      margin-left: 25px;
+    }
+  }
+  
+  
+    .caseImg{
+      width: 90%;
+      display:block;
+        margin-top:50%;
+      transform:translateY(50%);
+      margin:0 auto;
+    }
+  
+  
+  .case-study__overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    z-index:10; }
+
+    .case-study :after {
+      content:'';
+      width: 100%;
+      border-radius:10px;
+      height: 100%;
+      background-color: #202020;
+      opacity:0;
+      position: absolute;
+      top:0;
+      z-index:-10;
+      left:0;
+      transition:all .3s ease;
+    }
+   
+    .case-study__title {
+      position: relative;
+      top:-200px;
+      margin-bottom:2rem;
+      margin-top:4rem;
+      font-size: 2.25rem;
+      font-family: 'Oswald';
+      font-weight: 100;
+      color:white;
+      text-align: center;
+      letter-spacing:5px;
+      transition:all .3s cubic-bezier(.3, 0, 0, 1.3);
+    }
+    
+    .case-study__link {
+      position: relative;
+      display:block;
+      width:60%;
+      top:200px;
+      padding:10px;
+      margin: 0 auto;
+      font-family: 'Oswald';
+      color:white;
+      letter-spacing:3px;
+      text-decoration: none;
+      text-align: center;
+      border:2px solid white;
+      border-radius:3px;
+      font-size: 1.25em;
+      transition:all .3s cubic-bezier(.3, 0, 0, 1.3);}
+
+      .case-study__link:hover {
+        background-color: white;
+        color:#202020;
+      }
+  
+    
+    .case-study__title:hover{
+      top:0;
+    }
+    .case-study__link:hover{
+      top:0;
+    }
+    
+    .case-study__overlay:after{
+      opacity:.75;
+    } 
+  
+  
