@@ -13,9 +13,9 @@
 
 /* Typography */
 /**************************/
-#parallax-world-of-ugg h1 {font-family:'Oswald', sans-serif; font-size:24px; font-weight:400; text-transform: uppercase; color:black; padding:0; margin:0;}
-#parallax-world-of-ugg h2 {font-family:'Oswald', sans-serif; font-size:70px; letter-spacing:10px; text-align:center; color:white; font-weight:400; text-transform:uppercase; z-index:10; opacity:.9;}
-#parallax-world-of-ugg h3 {font-family:'Oswald', sans-serif; font-size:14px; line-height:0; font-weight:400; letter-spacing:8px; text-transform: uppercase; color:black;}
+#parallax-world-of-ugg h2 {font-family:Newyork; font-size:70px; letter-spacing:10px; text-align:center; color:white; font-weight:400; text-transform:uppercase; z-index:10; opacity:.9;}
+#parallax-world-of-ugg h4 {font-family:Gotham Pro; font-size:15px; letter-spacing:8px; text-align:center; color:white; font-weight:400; z-index:10; opacity:.9;}
+#parallax-world-of-ugg h3 {font-family:Newyork; font-size:20px; line-height:0; font-weight:900; letter-spacing:8px; text-transform: uppercase; color:black;}
 #parallax-world-of-ugg p {font-family:'Source Sans Pro', sans-serif; font-weight:400; font-size:14px; line-height:24px;}
 .first-character {font-weight:400; float: left; font-size: 84px; line-height: 64px; padding-top: 4px; padding-right: 8px; padding-left: 3px; font-family: 'Source Sans Pro', sans-serif;}
 
@@ -58,3 +58,55 @@
   @media screen and (max-width: 479px) {
     #parallax-world-of-ugg .block {padding: 30px 15px; width:290px;}
   }
+
+  #competences-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.desc-comp{
+  color: #000;
+  font-weight: 700;
+  margin: 10px 0 5px 0;
+  text-transform: uppercase;
+  font-size: 15px;
+  background: #006f80;
+  padding-left: 8px;
+  padding-right: 8px;
+
+  border-radius: 40px;
+
+}
+
+.comp{
+  flex-basis: 4%;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+.corps{
+  padding: 80px 0 80px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #333;
+}
+
+.gauche{
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+hr{
+  margin-top: 10px;
+  margin-bottom: 40px;
+  background: #006f80;
+  width: 100px;
+  height: 6px;
+  border: none;
+}
