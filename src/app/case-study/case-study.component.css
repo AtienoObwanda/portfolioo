@@ -305,6 +305,7 @@ header {
     font-size: 18px;
   }
 }
+
 .row {
   width: 95%;
   display: flex;
@@ -317,6 +318,7 @@ header {
     flex-direction: column;
   }
 }
+
 .card {
   display: flex;
   text-align: center;
@@ -337,7 +339,8 @@ header {
   transition: transform .4s;
 }
 
-.fas, .fab {
+.fas,
+.fab {
   display: inline-block;
   position: absolute;
   color: #63b563;
@@ -367,4 +370,44 @@ header {
   padding: 0 5px;
   line-height: 1.5;
   word-spacing: 4px;
+}
+
+.date {
+  font-size: 11px
+}
+
+.divider {
+  height: 0px !important;
+  background-color: blue
+}
+
+.track-line {
+  height: 2px !important;
+  background-color: green
+}
+
+.dot {
+  height: 30px;
+  width: 30px;
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-top: 2px;
+  background-color: green;
+  border-radius: 50%;
+  display: inline-block
+}
+
+.big-dot {
+  height: 35px;
+  width: 35px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  background-color: green;
+  border-radius: 50%;
+  display: inline-block
+}
+
+.big-dot i {
+  font-size: 12px
 }
