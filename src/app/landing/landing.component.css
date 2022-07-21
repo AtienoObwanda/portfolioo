@@ -26,6 +26,7 @@
     width: 60px;
     height: 100vh;
     background-color: #1f1d2b;
+    
   }
   
   h3 {
@@ -57,6 +58,7 @@
   .nav li i {
     display: block;
     padding: 15px 20px;
+    
   }
   
   .nav li i:hover {
@@ -64,6 +66,7 @@
     color: white;
     width: 60px;
     cursor: pointer;
+    
   }
   
   .nav li i:active {
@@ -78,6 +81,7 @@
     position: relative;
     display: block;
     overflow: hidden;
+
   }
   
   .media i {
@@ -86,6 +90,7 @@
     color: grey;
     margin-top: 12px; 
     cursor: pointer;
+
   }
   
   .media i:hover {
@@ -164,7 +169,7 @@
     display: flex;
     flex-direction: column;
     margin: 1rem auto;
-    box-shadow: 0 3px 7px -1px rgba(#000, .1);
+    box-shadow: 0px 0px 24px #5C5696;
     margin-bottom: 1.6%;
     background: white;
     line-height: 1.4;
@@ -291,9 +296,9 @@
     hr{
         margin-top: 10px;
         margin-bottom: 40px;
-        background: #006f80;
+        background: #FE8D01;
         width: 90px;
-        height: 4px;
+        height: 6px;
         border: none;
     }
 
