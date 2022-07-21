@@ -4,9 +4,12 @@
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  /* background-color: #1f1d2b; */
+  background-color: #1f1d2b;
+  padding-bottom: 0;
+  margin-bottom: 0;
 
 }
+
 
 /* Override UGG site */
 #main {
@@ -46,44 +49,19 @@
   opacity: .9;
 }
 
-#parallax-world-of-ugg h4 {
-  font-family: Gotham Pro;
-  font-size: 15px;
-  letter-spacing: 8px;
-  text-align: center;
-  color: white;
-  font-weight: 400;
-  z-index: 10;
-  opacity: .9;
-}
+
 
 #parallax-world-of-ugg h3 {
   font-family: Newyork;
-  font-size: 20px;
+  font-size: 35px;
   line-height: 0;
   font-weight: 900;
   letter-spacing: 8px;
   text-transform: uppercase;
-  color: black;
+  color: #FFF;
 }
 
-#parallax-world-of-ugg p {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-}
 
-.first-character {
-  font-weight: 400;
-  float: left;
-  font-size: 84px;
-  line-height: 64px;
-  padding-top: 4px;
-  padding-right: 8px;
-  padding-left: 3px;
-  font-family: 'Source Sans Pro', sans-serif;
-}
 
 
 
@@ -91,7 +69,7 @@
 /**************************/
 #parallax-world-of-ugg .title {
   background: white;
-  padding: 60px;
+  padding: 50px;
   margin: 0 auto;
   text-align: center;
 }
@@ -129,8 +107,9 @@
 /* Section - Parallax */
 /**************************/
 #parallax-world-of-ugg .parallax-one {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  height: 85vh;
   overflow: hidden;
   position: relative;
   width: 100%;
@@ -263,11 +242,12 @@ header {
 
 .title {
   font-size: 22px;
-  color: #2c2c2c;
+  color: #fff;
+  font-family: New York;
 }
 
 .desc {
-  color: #909090;
+  color: #fff;
   font-weight: 300;
   font-size: 1.1em;
   line-height: 1.45em;
@@ -307,14 +287,7 @@ header {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.card_img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  box-shadow: 0 9px 30px -6px rgba(24, 206, 15, 0.3);
-  position: relative;
-  transition: transform .4s;
-}
+
 
 .fas,
 .fab {
@@ -434,7 +407,7 @@ img:hover{
 }
 
 
-.container {
+.contactainer {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -465,47 +438,6 @@ img:hover{
 	clip-path: inset(0 0 0 0);	
 }
 
-.screen__background__shape {
-	transform: rotate(45deg);
-	position: absolute;
-}
-
-.screen__background__shape1 {
-	height: 520px;
-	width: 520px;
-	background: #FFF;	
-	top: -50px;
-	right: 120px;	
-	border-radius: 0 72px 0 0;
-}
-
-.screen__background__shape2 {
-	height: 220px;
-	width: 220px;
-	background: #6C63AC;	
-	top: -172px;
-	right: 0;	
-	border-radius: 32px;
-}
-
-.screen__background__shape3 {
-	height: 540px;
-	width: 190px;
-	background: linear-gradient(270deg, #5D54A4, #6A679E);
-	top: -24px;
-	right: 0;	
-	border-radius: 32px;
-}
-
-.screen__background__shape4 {
-	height: 400px;
-	width: 200px;
-	background: #7E7BB9;	
-	top: 420px;
-	right: 50px;	
-	border-radius: 60px;
-}
-
 .login {
 	/* width: 320px; */
 	padding: 30px;
@@ -515,12 +447,6 @@ img:hover{
 .login__field {
 	padding: 20px 0px;	
 	position: relative;	
-}
-
-.login__icon {
-	position: absolute;
-	top: 30px;
-	color: #7875B5;
 }
 
 .login__input {
