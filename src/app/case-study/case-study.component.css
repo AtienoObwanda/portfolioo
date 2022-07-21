@@ -184,7 +184,7 @@
   margin: 10px 0 5px 0;
   text-transform: uppercase;
   font-size: 15px;
-  background: #006f80;
+  background: #FE8D01;
   padding-left: 8px;
   padding-right: 8px;
   border-radius: 40px;
@@ -218,7 +218,7 @@
 hr {
   margin-top: 10px;
   margin-bottom: 40px;
-  background: #006f80;
+  background: #FE8D01;
   width: 100px;
   height: 6px;
   border: none;
@@ -284,7 +284,7 @@ header {
   align-items: center;
   margin: 10px;
   border: none;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	box-shadow: 0px 0px 24px #5C5696;
 }
 
 
