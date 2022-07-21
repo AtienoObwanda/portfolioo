@@ -307,7 +307,7 @@ header {
 }
 
 .card:hover .card_title {
-  color: #4bd482;
+  color: #FE8D01;
 }
 
 .card:hover .card_img {
@@ -464,7 +464,7 @@ img:hover{
 .login__input:focus,
 .login__input:hover {
 	outline: none;
-	border-bottom-color: #6A679E;
+	border-bottom-color: #FE8D01;
 }
 
 .login__submit {
