@@ -20,7 +20,8 @@ import { CaseStudyComponent } from './case-study/case-study.component';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+
 
 
   ],
