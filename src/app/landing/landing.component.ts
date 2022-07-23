@@ -1,7 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { ContactService } from '../contact.service';
 import { FormGroup, FormBuilder, FormControl, Validators, NgForm } from '@angular/forms'
-import { Router, ActivatedRoute } from '@angular/router';
+import { Router, ActivatedRoute,  ParamMap } from '@angular/router';
+import { Subscription } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
+
 
 @Component({
   selector: 'app-landing',
@@ -15,18 +18,30 @@ export class LandingComponent implements OnInit {
   suiv:any;
   FormData: any;
   // FormData: FormGroup;
+  projects : any;
 
 
   // constructor(private builder: FormBuilder) { }
-  constructor(private builder: FormBuilder, private contact: ContactService, private router: Router,) { }
+  constructor(private builder: FormBuilder, private contact: ContactService, private router: Router, private http: HttpClient,) { }
 
+  goToUrl (id:number) {
+    this.router.navigate(['/case-study/','id'])
+  }
 
-  ngOnInit() {
+  ngOnInit(): void {
+
+  
+     this.projects = this.http.get("https://pfolio-api.herokuapp.com/portfolio/project/").subscribe(
+      data => this.projects = data
+ 
+    )
+
     this.FormData = this.builder.group({
       Fullname: new FormControl('', [Validators.required]),
       Email: new FormControl('', [Validators.required, Validators.email]),
       Comment: new FormControl('', [Validators.required])
     });
+
   }
 
 
