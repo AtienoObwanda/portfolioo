@@ -120,50 +120,23 @@
 <div class="procontainer d-flex align-items-center justify-content-center flex-wrap">
   <h1 class="text-center" style="color: #FE8D01;">Top Projects</h1>
   <p style="color: white;">Here's a deep dive into some of the top projects I worked on.</p>
-  <div class="box">
-      <div class="body">
+  <div class="box" *ngFor="let project of projects">
           <div class="imgContainer">
-              <img src="https://images.pexels.com/photos/3601422/pexels-photo-3601422.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+            <img [src]="project.card_image" alt="Project_Image"/>
+
           </div>
           <div class="content d-flex flex-column align-items-center justify-content-center">
               <div>
-                <h3 class="text-white fs-5">Post Title</h3>
-                <p class="fs-6 text-white">Case Study</p>
+                <h3 class="text-white fs-5">{{project.title}}</h3>
+                <a href="" routerLink="" class="btn btn-success" type="button" style="background-color:#60D143 ;">Project</a>                
+                <a href="" routerLink="/case-study/{{project.id}}" class="btn btn-success" type="button" style="background-color:#60D143 ;">Case Study</a>                
                 <p class="fs-6 text-white">Visit Project</p>
               </div>
           </div>
       </div>
   </div>
-  <div class="box">
-      <div class="body">
-          <div class="imgContainer">
-              <img src="https://images.pexels.com/photos/1532771/pexels-photo-1532771.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
-          </div>
-          <div class="content d-flex flex-column align-items-center justify-content-center">
-              <div>
-                  <h3 class="text-white fs-5">Post Title</h3>
-                  <p class="fs-6 text-white">Case Study</p>
-                  <p class="fs-6 text-white">Visit Project</p>
-
-              </div>
-          </div>
-      </div>
-  </div>
-  <div class="box">
-      <div class="body">
-          <div class="imgContainer">
-              <img src="https://images.pexels.com/photos/573238/pexels-photo-573238.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="">
-          </div>
-          <div class="content d-flex flex-column align-items-center justify-content-center">
-              <div>
-                <h3 class="text-white fs-5">Post Title</h3>
-                <p class="fs-6 text-white">Case Study</p>
-                <p class="fs-6 text-white">Visit Project</p>              
-              </div>
-          </div>
-      </div>
-  </div>
-</div>
+ 
+ 
 
 
 <!-- contact me -->
