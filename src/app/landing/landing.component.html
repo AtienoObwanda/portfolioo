@@ -120,6 +120,8 @@
 <div class="procontainer d-flex align-items-center justify-content-center flex-wrap">
   <h1 class="text-center" style="color: #FE8D01;">Top Projects</h1>
   <p style="color: white;">Here's a deep dive into some of the top projects I worked on.</p>
+  <div class="probody">
+
   <div class="box" *ngFor="let project of projects">
           <div class="imgContainer">
             <img [src]="project.card_image" alt="Project_Image"/>
@@ -133,6 +135,7 @@
                 <p class="fs-6 text-white">Visit Project</p>
               </div>
           </div>
+      </div>
       </div>
   </div>
  
