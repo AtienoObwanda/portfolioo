@@ -18,7 +18,7 @@ export class LandingComponent implements OnInit {
   suiv:any;
   FormData: any;
   // FormData: FormGroup;
-  projects : any;
+  projects:any;
 
 
   // constructor(private builder: FormBuilder) { }
@@ -31,10 +31,8 @@ export class LandingComponent implements OnInit {
   ngOnInit(): void {
 
   
-     this.projects = this.http.get("https://pfolio-api.herokuapp.com/portfolio/project/").subscribe(
-      data => this.projects = data
- 
-    )
+     this.projects = this.http.get("https://pfolioapi.herokuapp.com/portfolio/project/").subscribe(
+      data => this.projects = data )
 
     this.FormData = this.builder.group({
       Fullname: new FormControl('', [Validators.required]),

@@ -88,20 +88,26 @@
 
   <!-- about me -->
 <div class="container">
+ 
+
     <div class="blog-card alt">
         <div class="row">
-            <div class="col-6">
+            <div class="col-6 sm-3">
                 <div class="meta">
                     <div class="photo" style="background-image: url(https://res.cloudinary.com/dyiuol5sx/image/upload/v1658013940/personal/me_kxxno9.jpg)"></div>
                   </div>
             </div>
-            <div class="col-6">
+            <div class="col-6 sm-3">
                 <div class="description">
                     <h2 style="color: #FE8D01;">Why Hire Me?</h2>
+                    <h6 style="color: #fff;">About Me:</h6>
+
+                    <p style="color: white;">I'm a fullstack developer who is passionate about solving day-to-day challenges, through technology at the same time elevating people, and building community.</p>
+
+                    <h6 style="color: #fff;">Services:</h6>
                     <p style="color: white;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p>
-                    <p style="color: white;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p>
-                    <p style="color: white;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p>
-                    <p style="color: white;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p>
+
+                    <h6 style="color: #fff;">Skills:</h6>
                     <p style="color: white;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p>
 
                   </div>
@@ -116,34 +122,23 @@
   <!-- Testimonials -->
  
 <!-- Case study -->
-
-<div class="procontainer d-flex align-items-center justify-content-center flex-wrap">
+<div class="container">
   <h1 class="text-center" style="color: #FE8D01;">Top Projects</h1>
   <p style="color: white;">Here's a deep dive into some of the top projects I worked on.</p>
-  <div class="probody">
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col" *ngFor="let project of projects">
+      <img [src]="project.main_image" alt="Image" class="card-img-top" style="height:300px;"/>
 
-  <div class="box" *ngFor="let project of projects">
-          <div class="imgContainer">
-            <img [src]="project.card_image" alt="Project_Image"/>
-
-          </div>
-          <div class="content d-flex flex-column align-items-center justify-content-center">
-              <div>
-                <h3 class="text-white fs-5">{{project.title}}</h3>
-                <a href="" routerLink="" class="btn btn-success" type="button" style="background-color:#60D143 ;">Project</a>                
-                <a href="" routerLink="/case-study/{{project.id}}" class="btn btn-success" type="button" style="background-color:#60D143 ;">Case Study</a>                
-                <p class="fs-6 text-white">Visit Project</p>
-              </div>
-          </div>
-      </div>
-      </div>
+    </div>
   </div>
- 
+</div>
+
+
  
 
 
 <!-- contact me -->
-  <h1 class="text-center mt-3" style="color: #FE8D01;">Thank you for your time!</h1>
+  <h1 class="text-center mt-5" style="color: #FE8D01;">Thank you for your time!</h1>
 
 
     <div class="contactainer mt-4 pt-3">
