@@ -163,14 +163,6 @@
   
      
 
-.corps{
-  padding: 80px 0 80px 0;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  color: #333;
-}
 .abtcontainer{
   width: 1200px;
   height: 100%;
@@ -180,67 +172,6 @@
   padding: 0 20px;
 }
 
-.gauche{
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-#competences-container{
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#carousel-comp{
-  width: 100%;
-  height: 170px;
-  display: flex;
-  align-items: center;
-  display: flex;
-  justify-content: flex-start;
-  overflow: hidden;
-  position: relative;
-}
-
-#slider-comp{
-  display: flex;
-  height: 100%;
-  width: 500%;
-  flex-shrink: 0;
-  transition: all 0.5s ease;
-}
-
-.desc-comp{
-  color: #fff;
-  font-weight: 700;
-  /* margin: 10px 0 5px 0; */
-  text-transform: uppercase;
-  font-size: 20px;
-}
-
-.comp svg, .comp img{
-  transition: all 500ms ease;
-}
-
-.comp{
-  flex-basis: 2.5%;
-  flex-shrink: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.fleches{
-  transition: opacity 250ms ease;
-  cursor: pointer;
-  opacity: 0.4;
-}
-
-.fleches:hover{
-  opacity: 1;
-}
 hr{
   margin-top: 10px;
   margin-bottom: 40px;
@@ -556,4 +487,154 @@ a:hover {
 
 .content {
   padding: 10px
+}
+
+
+
+/* Reseting */
+.stack-content{
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.stack-content .stack-container{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    box-shadow: 2px 15px 20px #1f1f1f10,-2px -8px 20px #1f1f1f1a;
+}
+
+
+.stack-container .rollers{
+    flex: 0 0 230px;
+}
+
+.stack-container .start-roller{
+    left: 0;
+    top: 0;
+    /* background-image: linear-gradient(to right, white 30%, #ffffff00); */
+}
+
+.stack-container .start-roller,
+.stack-container .end-roller{
+    height: 100%;
+    width: 40px;
+    position: absolute;
+    z-index: 1;
+}
+
+.stack-container .end-roller{
+    right: 0;
+    top: 0;
+    /* background-image: linear-gradient(to left, white 30%, rgba(255, 255, 255, 0)); */
+}
+
+.stack-container .rollers .wrapper{
+    position: relative;
+    width: 1400px;
+    height: 100px;
+    margin: 0 0 20px 0;
+    flex: 0 0 auto;
+}
+
+.stack-container .rollers .wrapper .items-container{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+.stack-container .rollers .wrapper .items-container.roll-LL{
+    animation-name: roll;
+}
+.stack-container .rollers .wrapper .items-container.roll-RL{
+    animation-name: roll-reverse;
+    left: 100%;
+}
+.stack-container .rollers .wrapper .items-container.reverse-roll-LL{
+    animation-name: roll-clockwise;
+    left: -100%;
+}
+.stack-container .rollers .wrapper .items-container.reverse-roll-RL{
+    animation-name: roll-reverse-clockwise;
+    left: 100%;
+}
+
+@keyframes roll {
+    0%{
+        left: 0%;
+    }
+    100%{
+        left: -100%;
+    }
+}
+@keyframes roll-reverse {
+    0%{
+        left: 100%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+@keyframes roll-clockwise {
+    0%{
+        left: -100%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+@keyframes roll-reverse-clockwise {
+    0%{
+        left: 0%;
+    }
+    100%{
+        left: 100%;
+    }
+}
+
+
+.stack-container .rollers .wrapper .items-container .item{
+    flex: 1 1 200px;
+    min-width: 0;
+    margin: 20px;
+}
+
+.stack-container .rollers .wrapper .items-container .item .company{
+    filter: grayscale(100%);
+    opacity: 0.2;
+    width: 100%;
+    object-fit: contain;
+}
+
+.stack-container .rollers .wrapper .items-container .item .company:hover{
+    filter: grayscale(0%);
+    opacity: 1;
+    cursor: pointer;
+}
+
+.stack-container img{
+    vertical-align: middle;
+}
+
+@media (max-width: 575.5px) {
+    .stack-content{
+        padding: 20px;
+    }
+    .stack-content .stack-container{
+        padding: 20px;
+    }
+    .h3{
+        font-size: calc(1.1rem + .6vw);
+    }
+    .fs-5 {
+        font-size: 0.9rem!important;
+    }
+    .stack-container .rollers .wrapper .items-container .item .company{
+        opacity: 0.4;
+    }
 }
