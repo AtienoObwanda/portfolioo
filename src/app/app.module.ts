@@ -10,6 +10,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { CaseStudyComponent } from './case-study/case-study.component';
 import { IntroComponent } from './intro/intro.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { StackComponent } from './stack/stack.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     SidebarComponent,
     CaseStudyComponent,
     IntroComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    StackComponent
   ],
   imports: [
     BrowserModule,
