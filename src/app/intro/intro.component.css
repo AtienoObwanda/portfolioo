@@ -488,7 +488,17 @@ a:hover {
 .content {
   padding: 10px
 }
+ .proBtn{
+  color: #FE8D01;
+  /* border: #FE8D01; */
+  border: solid  #FE8D01 ;
+ }
 
+ .proBtn:hover{
+  color: #fff;
+  background-color: #FE8D01;
+  border: solid  #FE8D01 ;
+ }
 
 
 /* Reseting */
