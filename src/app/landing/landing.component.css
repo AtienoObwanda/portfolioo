@@ -1,4 +1,4 @@
-* {
+/* * {
   box-sizing: border-box;
   scroll-behavior: smooth;
   background-color: #1f1d2b;
@@ -125,8 +125,6 @@ body {
   
   span {
     color: #FE8D01;
-    /* -webkit-text-stroke: 4px #FFF;
-    -webkit-text-fill-color: #FE8D01; */
     font-family: Newyork;
     font-weight: bold;
 
@@ -146,7 +144,6 @@ body {
   }
   
   .text button:hover {
-    /* background-color: #FE8D01; */
     color: white;
     border: 1px solid white;
   }
@@ -200,7 +197,6 @@ body {
       left: 0;
       background-size: cover;
       background-position: center;
-      /* transition: transform .2s; */
     }
 
 
@@ -256,7 +252,6 @@ body {
     .desc-comp{
         color: #fff;
         font-weight: 700;
-        /* margin: 10px 0 5px 0; */
         text-transform: uppercase;
         font-size: 20px;
     }
@@ -284,12 +279,7 @@ body {
         opacity: 1;
     }
     
-    /* h3{
-        font-size: 28px;
-        font-weight: 600;
-        text-transform: uppercase;
-    }
-     */
+   
     hr{
         margin-top: 10px;
         margin-bottom: 40px;
@@ -373,7 +363,6 @@ body {
     font-size: 3.75rem;
     letter-spacing:5px;
     background: linear-gradient(rgba(255,0,0,0), #444,rgba(255,0,0,0));
-    /* -webkit-background-clip: text; */
     -webkit-text-fill-color: transparent;
     margin-bottom: 0;
     @media screen and (min-width:37.5em){
@@ -438,7 +427,6 @@ body {
 
 
 .login {
-	/* width: 320px; */
 	padding: 30px;
 	padding-top: 50px;
 }
@@ -578,4 +566,4 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
