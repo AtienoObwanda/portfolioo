@@ -461,7 +461,7 @@ a:hover {
   background-color: #fff;
 }
 
-.procard .content .price {
+.procard .content .stack {
   font-size: 17px;
   font-weight: 500;
   color: #0d6efd;
@@ -609,7 +609,7 @@ a:hover {
     opacity: 0.2;
     width: 100%;
     object-fit: contain;
-    height: 100px;
+    height: 80px;
 }
 
 .stack-container .rollers .wrapper .items-container .item .company:hover{

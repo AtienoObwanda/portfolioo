@@ -72,7 +72,8 @@
 
 <div class="content d-flex align-items-center justify-content-center">
   <div class="stack-container rounded">
-    <h3 class="fw-bold">Spécializing in:</h3>
+    <h3 class="fw-bold mb-5" style="">Spécializing in:</h3>
+    <hr>
       <div class="rollers position-relative overflow-hidden">
           <div class="start-roller"></div>
           <div class="wrapper">
@@ -354,14 +355,14 @@
                   <div
                     class="d-flex justify-content-between align-items-center" style=" background-color: #fff;">
                     <span class="category">{{project.title}}</span>
-                    <span class="price">$599</span>
+                      <span class="stack">{{project.name}}</span>
                   </div>
-                  <p style="background-color: #fff;">Dell Astro 3044</p>
+                  <p style="background-color: #fff;">{{project.overview}}</p>
                   <div class="buttons d-flex justify-content-center" style="background-color: #fff;">
-                    <button class="btn btn-outline-primary mr-1">
-                      View Project
-                    </button>
-                    <button class="btn btn-primary">Case Study</button>
+                    <a href="{{project.url}}" class="btn btn-outline-primary mr-1" style="text-decoration: none;">
+                        View Project
+                    </a>
+                    <!-- <button class="btn btn-primary">Case Study</button> -->
                   </div>
                 </div>
               </div>
