@@ -20,25 +20,59 @@
   <body>
     <section id="home">
       <div class="main">
-        <header>
+        <header style="background-color: transparent;">
           <h3>A</h3>
-          <div class="nav">
+          <div class="nav" style="background-color: transparent;">
             <ul style="color: #fff">
-              <li><i class="fa fa-home fa-lg"></i></li>
-              <li><i class="fa fa-user fa-lg"></i></li>
-              <li><i class="fa fa-envelope fa-lg"></i></li>
+              <li>
+                <a  href="#home" style="text-decoration: none;">
+                  <i class="fa fa-home fa-sm" style="text-decoration: none; background-color: transparent;">
+                  </i>
+                 </a>
+              </li>
+
+              <li>
+                <a  href="#about" style="text-decoration: none;">
+                  <i class="fa fa-user fa-sm"></i>
+                </a>
+              </li>
+
+              <li>
+                <a  href="mailto:atienoobwanda@gmail.com" style="text-decoration: none;">
+                  <i class="fa fa-envelope fa-sm"></i>
+                </a>
+              </li>
+
+              <li>
+                <a  href="tel:+254-743-068355" style="text-decoration: none;">
+                  <i class="fa fa-phone fa-sm"></i>
+                </a>
+              </li>
+              <li>
+                <a  href="https://wa.me/+254743068355/?text=Hi Atieno" style="text-decoration: none;">
+                  <i class="fa fa-whatsapp fa-sm"></i>
+                </a>
+              </li>
+
+
             </ul>
           </div>
           <div class="media">
-            <a href="#" style="text-decoration: none"
-              ><i class="fa fa-github"></i
-            ></a>
-            <i class="fa fa-facebook-square" style="text-decoration: none"></i>
-            <a href="#" style="color: #fff; text-decoration: none"
-              ><i class="fa fa-twitter"></i
-            ></a>
+            <a href="https://github.com/AtienoObwanda" style="text-decoration: none;">
+              <i class="fa fa-github" style="text-decoration: none; background-color: transparent;"></i>
+            </a>
+            <a href="#" style="text-decoration: none;">
+              <i class="fa fa-facebook-square" style="text-decoration: none; background-color: transparent; "></i>
+            </a>
+            <a href="https://twitter.com/atien_o" style="color: #fff; text-decoration: none">
+              <i class="fa fa-twitter" style="text-decoration: none; background-color: transparent;"></i>
+            </a>
+            <a href="https://www.instagram.com/atien.o/" style="text-decoration: none;">
+              <i class="fa fa-instagram" style="text-decoration: none; background-color: transparent; "></i>
+            </a>
           </div>
         </header>
+        <div class="portfolio">
         <div class="home">
           <div class="container">
             <div class="row d-flex flex-row">
@@ -70,11 +104,11 @@
 
 
 
-<div class="content d-flex align-items-center justify-content-center">
+<div class="content d-flex align-items-center justify-content-center mt-5">
   <div class="stack-container rounded">
-    <h3 class="fw-bold mb-5" style="">Spécializing in:</h3>
-    <hr>
-      <div class="rollers position-relative overflow-hidden">
+    <h3 class="fw-bold">Spécializing in:</h3>
+    <!-- <hr> -->
+      <div class="rollers position-relative overflow-hidden mt-4">
           <div class="start-roller"></div>
           <div class="wrapper">
               <div class="items-container roll-LL">
@@ -166,7 +200,7 @@
 </div>
 
         <!-- about me -->
-        <div class="container">
+        <div class="container" id="about">
           <div class="blog-card alt">
             <div class="row d-flex justify-content-between flex-row">
               <div class="col-md-6 align-self-center">
@@ -224,10 +258,10 @@
         </div>
 
         <!--My services-->
-        <div class="container mb-5">
-          <h3>My Sérvices</h3>
-          <!-- <hr/> -->
-          <div class="row">
+        <div class="container mb-5 mt-5">
+          <h3 class="fw-bold">My Sérvices</h3>
+          <!-- <hr> -->
+          <div class="row mt-5">
             <div class="col-6">
               <div
                 class="card p-3"
@@ -440,6 +474,7 @@
           </p>
         </div>
       </div>
+    </div>
     </section>
   </body>
 </html>

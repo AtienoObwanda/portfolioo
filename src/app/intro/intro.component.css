@@ -10,7 +10,9 @@
 
     }
     
-   
+   /* .portfolio{
+    margin-left: auto;
+   } */
   
     .main {
       display: block;
@@ -24,9 +26,9 @@
       position: fixed;
       margin: 0 auto;
       padding: 0;
-      width: 55px;
+      width: 50px;
       height: 100vh;
-      background-color: #1f1d2b;
+      background-color: transparent;
       
     }
     
@@ -39,9 +41,11 @@
     
     .nav {
       margin: 60px auto;
-      width: 55px;
+      width: 50px;
       height: 50vh;
       line-height: 50px;
+      background: transparent !important;
+
     }
     
     ul {
@@ -71,17 +75,19 @@
     }
     
     .nav li i:active {
-     background-color: #1f1d2b;
+     background-color: transparent;
       color: white;
     }
     
     .media {
-      width: 55px;
+      width: 50px;
       height: 120px;
       margin-top: -25px;
       position: relative;
       display: block;
       overflow: hidden;
+      background-color: transparent;
+
   
     }
     
@@ -179,6 +185,7 @@ hr{
   width: 90px;
   height: 6px;
   border: none;
+  /* text-align: center; */
 }
 
 
