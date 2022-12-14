@@ -26,7 +26,7 @@ export class IntroComponent implements OnInit {
   ngOnInit(): void {
 
   
-    this.projects = this.http.get("https://pfolioapi.herokuapp.com/portfolio/project/").subscribe(
+    this.projects = this.http.get("https://portfolioapi.up.railway.app/project/").subscribe(
      data => this.projects = data )
 
    this.FormData = this.builder.group({
